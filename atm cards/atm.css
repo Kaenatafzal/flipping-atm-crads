@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background:radial-gradient(white,black);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+/* section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: radial-gradient(yellow,white);
+    transform: translate(-150px,-100px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: radial-gradient(yellow,white);
+    transform: translate(150px,100px);} */
+
+
+.container{
+    
+    height: 275px;
+    width: 400px;
+    position: relative;
+    z-index: 100;
+    
+
+}
+.container .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(60px); */
+    border-radius: 25px;
+    border: 1px transparent rgba(255, 255, 255, 0.8);
+    box-shadow: 20px 25px 5px rgba(0,0,0, 0.25);
+    background-image: url('virtual_card.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    backface-visibility: hidden;
+    
+    
+}
+.front-face header,
+.front-face .logo{
+    display: flex;
+    align-items: center;
+}
+.front-face .logo img{
+    margin: 10px;
+    width: 90px;
+    
+}
+.front-face header{
+    justify-content: space-between;
+
+}
+.front-face h4{
+    font-family: 'Arial Narrow Bold', sans-serif;;
+    color:#b9b4b4;
+    text-transform: uppercase;
+    font-size: 15px;
+    /* font-weight: 500;  */
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+.front-face .chip{
+    width: 85px;
+    margin-left: 70px;
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 20px;
+    align-items: flex-end;
+}
+ h5.number{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 5px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #b9b4b4;
+    
+ }
+h5.name{
+    letter-spacing: 4px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #b9b4b4;
+    text-transform: uppercase;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+h6 {
+    font-size: 12px;
+    color: #b9b4b4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family:'Arial Narrow Bold', sans-serif;
+
+}
+.card .back-face{
+    border: none;
+    padding: 25px 25px 25px 25px;
+}
+
+
+   
+
+
